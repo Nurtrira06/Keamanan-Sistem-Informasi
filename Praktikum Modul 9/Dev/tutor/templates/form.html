@@ -1,0 +1,35 @@
+<!-- <form method='post'>
+    {% csrf_token %}
+    <table>{{classform.as_table}}</table>
+    <label for="nama">Nama : </label>
+    <input type="text" name="nama" id="nama">
+    <br>
+    <label for="nama">Alamat : </label>
+    <input type="text" name="alamat" id="alamat">
+    <br>
+    <button type="Submit">Kirim</button>
+</form>
+
+<h2>{{nama}} {{namac}}</h2>
+<h2>{{alamat}} {{alamatc}}</h2>
+
+
+<form method='post'>
+    {% csrf_token %}
+    {{classform.namac.label_tag}} <br>
+    {{classform.namac}}
+<button type="Submit">Kirim</button>
+</form> -->
+
+<h2>Ini form CRUD</h2>
+<form method='post'>
+    {% csrf_token %}
+    {{classform.title.label}}<br>
+    {{classform.title}}<br>
+    {{classform.body.label}}<br>
+    {{classform.body}}<br>
+    {{classform.email.label}}<br>
+    {{classform.email}}<br>
+    <button type="Submit">Kirim</button>
+</form>
+<br>
